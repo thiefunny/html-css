@@ -49,9 +49,9 @@
                 <ul>
                     <li><label for="radio1"><input type="radio" name="radio1name" id="radio1" value="Pan">Pan</label>
                     </li>
-                    <li><label for="radio2"><input type="radio" name="radio2name" id="radio2" value="Pani">Pani</label>
+                    <li><label for="radio2"><input type="radio" name="radio1name" id="radio2" value="Pani">Pani</label>
                     </li>
-                    <li><label for="radio3"><input type="radio" name="radio3name" id="radio3" value="Ono">Ono</label>
+                    <li><label for="radio3"><input type="radio" name="radio1name" id="radio3" value="Ono">Ono</label>
                     </li>
                 </ul>
             </fieldset>
@@ -75,30 +75,78 @@
             <h2>
                 Payment information
             </h2>
-<ul>
-<li>
-    <label for="card-type">Card type</label>
-    <select id="card-type" name="user-card-type">
-        <option value="Visa">Visa</option>
-        <option value="Mastercard">Mastercard</option>
-        <option value="Pikus">Pikus</option>
-        <option value="Formalina">Formalina</option>
-    </select>
-</li>
-<li>
-    <label for="card-number">Card number <abbr title="required">*</abbr></label>
-    <input type="text" name="user-card-number" id="card-number" required value=''>
-</li>
-<li>
-    <label for="exp-date">Expiration date</label>
-    <input type="date" name="card-exp-date" id="exp-date" value="">
-</li>
-<li>
-<input type="hidden" name="verify" id="verify" value="ok">
+            <ul>
+                <li>
+                    <label for="card-type">Card type</label>
+                    <select id="card-type" name="user-card-type">
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Pikus">Pikus</option>
+                        <option value="Formalina">Formalina</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="card-number">Card number <abbr title="required">*</abbr></label>
+                    <input type="text" name="user-card-number" id="card-number" required value=''>
+                </li>
+                <li>
+                    <label for="exp-date">Expiration date</label>
+                    <input type="date" name="card-exp-date" id="exp-date" value="100" autofocus>
+                </li>
+                <li>
+                </li>
+                <input type="hidden" name="verify" id="verify" value="ok">
 
-    <button type="submit">Submit card and everything</button>
-</li>
-</ul>
+
+                <h2>Ogórki i inne kiszonki</h3>
+                    <fieldset>
+                        <legend>Jakie kiszonki lubisz?</legend>
+                        <ol>
+                            <li>
+                                <input type="checkbox" name="lubie-ogorki" id="ogorki" value="ogorkix">
+                                <label for="ogorki">Ogórki</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="lubie-ogorki" id="ogorki2" value="ogorkiy">
+                                <label for="ogorki2">Kapusta</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="lubie-ogorki" id="ogorki3" value="ogorkiz">
+                                <label for="ogorki3">cojeszcze</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="lubie-ogorki" id="ogorki4" value="ogorkiv">
+                                <label for="ogorki4">inne</label>
+                            </li>
+                        </ol>
+                    </fieldset>
+
+                    <input type="file" name="asd" id="qwe" accept=".pdf">
+
+                    <input type="color" name="asd" id="asd3">
+
+                    <fieldset>
+                        <legend>multiki</legend>
+                        <select name="warzywa" id="warzywa-ulubione">
+                            <optgroup label="czerwone">
+                                <option value="pomidor">pom</option>
+                                <option value="papryka">pap</option>
+                                <option value="banan">banan</option>
+                            </optgroup>
+                            <optgroup label="zielone">
+                                <option value="ogórek">ogórek</option>
+                                <option value="grass">trawa</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+
+
+
+                    <input type="image" src="http://unsplash.it/100/100" alt="submit!">
+
+                    <button type="submit">Submit card and everything</button>
+                    </li>
+            </ul>
         </section>
 
 
