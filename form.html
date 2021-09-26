@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mikołaj">
+    <meta name="description" content="Strona główna">
+    <meta name="keywords" content="strona, nauka, html, css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <form action="/send" method="post">
+
+        <ul>
+            <fieldset>
+                <legend>Introducuse yourself</legend>
+                <li>
+                    <label for="name">name <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" name="user-name" id="name" value="miki">
+
+                </li>
+                <li>
+                    <label for="mail">e-mail</label>
+                    <input type="email" name="user-mail" id="mail">
+                </li>
+                <li>
+                    <label for="message">message</label>
+                    <textarea name="user-message" id="message" cols="30" rows="10">coś</textarea>
+                </li>
+            </fieldset>
+            <li>
+                <button type="submit">Submit</button>
+            </li>
+        </ul>
+    </form>
+
+    <form>
+        <h1>Payment form</h1>
+        <p>Required fields are followed by <abbr title="required">*</abbr>.</p>
+        <section>
+            <h2>Contact information</h2>
+            <fieldset>
+                <legend>Title</legend>
+                <ul>
+                    <li><label for="radio1"><input type="radio" name="radio1name" id="radio1" value="Pan">Pan</label>
+                    </li>
+                    <li><label for="radio2"><input type="radio" name="radio1name" id="radio2" value="Pani">Pani</label>
+                    </li>
+                    <li><label for="radio3"><input type="radio" name="radio1name" id="radio3" value="Ono">Ono</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <p>
+                <label for="name2">Name <abbr title="required">*</abbr></label>
+                <input type="text" name="user-name" id="name2"  spellcheck="true" size="50" maxlength="10">
+            </p>
+
+            <p>
+                <label for="mail2">E-mail <abbr title="required">*</abbr></label>
+                <input type="email" name="user-mail2" id="mail2" >
+            </p>
+
+            <p>
+                <label for="pss">Password <abbr title="required">*</abbr></label>
+                <input type="password" name="user-password" id="pss" >
+            </p>
+        </section>
+        <section>
+            <h2>
+                Payment information
+            </h2>
+            <ul>
+                <li>
+                    <label for="card-type">Card type</label>
+                    <select id="card-type" name="user-card-type">
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Pikus">Pikus</option>
+                        <option value="Formalina">Formalina</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="card-number">Card number <abbr title="required">*</abbr></label>
+                    <input type="text" name="user-card-number" id="card-number"  value=''>
+                </li>
+                <li>
+                    <label for="exp-date">Expiration date</label>
+                    <input type="date" name="card-exp-date" id="exp-date" value="100">
+                </li>
+                <li>
+                </li>
+                <input type="hidden" name="verify" id="verify" value="ok">
+
+
+                <h2>Ogórki i inne kiszonki</h3>
+                    <fieldset>
+                        <legend>Jakie kiszonki lubisz?</legend>
+                        <ol>
+                            <li>
+                                <input type="checkbox" name="lubie-ogorki" id="ogorki" value="ogorkix">
+                                <label for="ogorki">Ogórki</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="lubie-ogorki" id="ogorki2" value="ogorkiy">
+                                <label for="ogorki2">Kapusta</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="lubie-ogorki" id="ogorki3" value="ogorkiz">
+                                <label for="ogorki3">cojeszcze</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="lubie-ogorki" id="ogorki4" value="ogorkiv">
+                                <label for="ogorki4">inne</label>
+                            </li>
+                        </ol>
+                    </fieldset>
+
+                    <input type="file" name="asd" id="qwe" accept=".pdf">
+
+                    <input type="color" name="asd" id="asd3">
+
+                    <fieldset>
+                        <legend>multiki</legend>
+                        <select name="warzywa" id="warzywa-ulubione">
+                            <optgroup label="czerwone">
+                                <option value="pomidor">pom</option>
+                                <option value="papryka">pap</option>
+                                <option value="banan">banan</option>
+                            </optgroup>
+                            <optgroup label="zielone">
+                                <option value="ogórek">ogórek</option>
+                                <option value="grass">trawa</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>autocomplete</legend>
+                        <label for="auto" value="autocomplete! datalist"></label>
+                        <input type="text" name="autocomplete" id="auto" list="mikauto">
+                        <datalist id="mikauto">
+                        <option value="mikolaj"></option>    
+                        <option value="walanus"></option>    
+                        <option value="waluś"></option>    
+                        <option value="walor"></option>    
+                        </datalist>
+                    </fieldset>
+
+                    <p><input type="text" style="background: url('https://unsplash.it/100/100') no-repeat center left 0.3rem; padding-left: 2rem; color: blue; height: 2rem; background-size: 1rem;"></p>
+                    <p><input type="tel"></p>
+
+                    <progress max="100" value="50"></progress>
+
+                    <input type="image" src="http://unsplash.it/100/100" alt="submit!">
+
+                    <button type="button">Submit card and everything</button>
+                    </li>
+            </ul>
+        </section>
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>

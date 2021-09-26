@@ -14,147 +14,54 @@
 
 <body>
 
-    <form action="/send" method="post">
+<h3>description list</h3>
+<dl>
+    <dt>trawa</dt>
+    <dd>to jest zielone ups ups</dd><dt>trawa</dt>
+    <dd>to jest zielone ups ups</dd><dt>trawa</dt>
+    <dd>to jest zielone ups ups</dd><dt>trawa</dt>
+    <dd>to jest zielone ups ups</dd><dt>trawa</dt>
+    <dd>to jest zielone ups ups</dd><dt>trawa</dt>
+    <dd>to jest zielone ups ups</dd>
+</dl>
 
-        <ul>
-            <fieldset>
-                <legend>Introducuse yourself</legend>
-                <li>
-                    <label for="name">name <abbr title="required" aria-label="required">*</abbr></label>
-                    <input type="text" name="user-name" id="name" value="miki">
+   <p class="columns"> Praesent ultrices, odio et tempus,  <blockquote cite="https://walanus.com"><strong>Praesent ultrices</strong>, odio et tempus cursus, metus orci faucibus felis, eget <em>ullamcorper augue lorem</em></blockquote> sit amet leo. Vivamus in hendrerit diam, ac porttitor tortor. Donec malesuada sollicitudin nisl, eu facilisis lectus luctus id. Maecenas eget nunc a purus commodo posuere ac vitae mi. <code>Aliquam ultrices dictum sem in maximus. Suspendisse ac nibh lacinia mauris convallis placerat.</code> Aliquam erat volutpat. Maecenas ac velit nec ante blandit eleifend. Ut libero nulla, tincidunt et arcu quis, vestibulum iaculis massa. Suspendisse malesuada elit sed velit bibendum laoreet. Morbi ut blandit ante. Ut ac sodales velit.</p>
 
-                </li>
-                <li>
-                    <label for="mail">e-mail</label>
-                    <input type="email" name="user-mail" id="mail">
-                </li>
-                <li>
-                    <label for="message">message</label>
-                    <textarea name="user-message" id="message" cols="30" rows="10">coś</textarea>
-                </li>
-            </fieldset>
-            <li>
-                <button type="submit">Submit</button>
-            </li>
-        </ul>
-    </form>
+    <p>Nam ullamcorper odio <q>eu neque eleifend, eu finibus odio iaculis</q>. Suspendisse gravida ante vitae enim congue pellentesque. Suspendisse faucibus luctus posuere. Suspendisse scelerisque cursus augue. Nam eu lectus dui. Morbi lacinia, purus eu placerat maximus, ante ligula maximus nulla, id malesuada enim justo ut magna. Suspendisse eleifend pulvinar ex sit amet feugiat. Pellentesque tristique sem non lacinia finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque placerat ipsum eget posuere rutrum. Aliquam sollicitudin eros a nibh volutpat vulputate nec a massa. Suspendisse at felis eleifend, interdum ex non, accumsan libero. </p>
 
-    <form action="/send" method="post">
-        <h1>Payment form</h1>
-        <p>Required fields are followed by <abbr title="required">*</abbr>.</p>
-        <section>
-            <h2>Contact information</h2>
-            <fieldset>
-                <legend>Title</legend>
-                <ul>
-                    <li><label for="radio1"><input type="radio" name="radio1name" id="radio1" value="Pan">Pan</label>
-                    </li>
-                    <li><label for="radio2"><input type="radio" name="radio1name" id="radio2" value="Pani">Pani</label>
-                    </li>
-                    <li><label for="radio3"><input type="radio" name="radio1name" id="radio3" value="Ono">Ono</label>
-                    </li>
-                </ul>
-            </fieldset>
-
-            <p>
-                <label for="name2">Name <abbr title="required">*</abbr></label>
-                <input type="text" name="user-name" id="name2" required spellcheck="true" size="50" maxlength="10">
-            </p>
-
-            <p>
-                <label for="mail2">E-mail <abbr title="required">*</abbr></label>
-                <input type="email" name="user-mail2" id="mail2" required>
-            </p>
-
-            <p>
-                <label for="pss">Password <abbr title="required">*</abbr></label>
-                <input type="password" name="user-password" id="pss" required>
-            </p>
-        </section>
-        <section>
-            <h2>
-                Payment information
-            </h2>
-            <ul>
-                <li>
-                    <label for="card-type">Card type</label>
-                    <select id="card-type" name="user-card-type">
-                        <option value="Visa">Visa</option>
-                        <option value="Mastercard">Mastercard</option>
-                        <option value="Pikus">Pikus</option>
-                        <option value="Formalina">Formalina</option>
-                    </select>
-                </li>
-                <li>
-                    <label for="card-number">Card number <abbr title="required">*</abbr></label>
-                    <input type="text" name="user-card-number" id="card-number" required value=''>
-                </li>
-                <li>
-                    <label for="exp-date">Expiration date</label>
-                    <input type="date" name="card-exp-date" id="exp-date" value="100" autofocus>
-                </li>
-                <li>
-                </li>
-                <input type="hidden" name="verify" id="verify" value="ok">
-
-
-                <h2>Ogórki i inne kiszonki</h3>
-                    <fieldset>
-                        <legend>Jakie kiszonki lubisz?</legend>
-                        <ol>
-                            <li>
-                                <input type="checkbox" name="lubie-ogorki" id="ogorki" value="ogorkix">
-                                <label for="ogorki">Ogórki</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="lubie-ogorki" id="ogorki2" value="ogorkiy">
-                                <label for="ogorki2">Kapusta</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="lubie-ogorki" id="ogorki3" value="ogorkiz">
-                                <label for="ogorki3">cojeszcze</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="lubie-ogorki" id="ogorki4" value="ogorkiv">
-                                <label for="ogorki4">inne</label>
-                            </li>
-                        </ol>
-                    </fieldset>
-
-                    <input type="file" name="asd" id="qwe" accept=".pdf">
-
-                    <input type="color" name="asd" id="asd3">
-
-                    <fieldset>
-                        <legend>multiki</legend>
-                        <select name="warzywa" id="warzywa-ulubione">
-                            <optgroup label="czerwone">
-                                <option value="pomidor">pom</option>
-                                <option value="papryka">pap</option>
-                                <option value="banan">banan</option>
-                            </optgroup>
-                            <optgroup label="zielone">
-                                <option value="ogórek">ogórek</option>
-                                <option value="grass">trawa</option>
-                            </optgroup>
-                        </select>
-                    </fieldset>
-
-
-
-                    <input type="image" src="http://unsplash.it/100/100" alt="submit!">
-
-                    <button type="submit">Submit card and everything</button>
-                    </li>
-            </ul>
-        </section>
-
-
-    </form>
-
-
+<table>
+    
+    <thead>
+        <tr>
+            <th colspan="4">asdasd</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>as</td>
+            <td>asd</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>as</td>
+            <td>asd</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>as</td>
+            <td>asd</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <!-- <tr>miki</tr> -->
+        <th colspan="3">mikifiki</th>
+    </tfoot>
+</table>
 
 
 </body>
-
 </html>

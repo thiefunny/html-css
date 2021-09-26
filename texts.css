@@ -1,0 +1,16 @@
+body {
+    /* background-color: darkorange; */
+}
+
+.columns {
+    columns: 3;
+    column-gap: 100px;
+    column-rule: darkorange 2px solid
+}
+
+table, th, td, tr {border: 1px black solid;}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 2rem;
+}
