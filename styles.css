@@ -1,4 +1,6 @@
 @import './texts.css';
+@import './flex.css';
+@import './grid.css'
 
 
 :root {

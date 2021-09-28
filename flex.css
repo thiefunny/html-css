@@ -1,0 +1,17 @@
+.container {
+    width: 800px;
+    margin-inline: auto;
+    background-color: bisque;
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+p {
+    /* width: 50px; */
+    background-color: blue;
+}
+
+.container > * {
+    flex-basis: 100%;
+}
